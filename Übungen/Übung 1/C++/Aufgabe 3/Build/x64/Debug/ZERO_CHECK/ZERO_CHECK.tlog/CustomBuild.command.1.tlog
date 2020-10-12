@@ -1,0 +1,10 @@
+^D:\STUDIUM INF WS20_21\PROG3\ÜBUNGEN\ÜBUNG 1\C++\AUFGABE 3\BUILD\CMAKEFILES\0B6A01197DBDBEB2BEDEAE6CA0998A4E\GENERATE.STAMP.RULE
+setlocal
+D:\CMake\bin\cmake.exe "-SD:/Studium Inf WS20_21/Prog3/Übungen/Übung 1/C++/Aufgabe 3" "-BD:/Studium Inf WS20_21/Prog3/Übungen/Übung 1/C++/Aufgabe 3/Build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Studium Inf WS20_21/Prog3/Übungen/Übung 1/C++/Aufgabe 3/Build/Aufgabe3.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

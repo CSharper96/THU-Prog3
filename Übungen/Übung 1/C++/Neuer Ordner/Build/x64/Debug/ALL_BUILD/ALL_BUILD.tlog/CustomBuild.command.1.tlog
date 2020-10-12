@@ -1,0 +1,10 @@
+^D:\STUDIUM INF WS20_21\PROG3\ÜBUNGEN\ÜBUNG 1\C++\NEUER ORDNER\CMAKELISTS.TXT
+setlocal
+D:\CMake\bin\cmake.exe "-SD:/Studium Inf WS20_21/Prog3/Übungen/Übung 1/C++/Neuer Ordner" "-BD:/Studium Inf WS20_21/Prog3/Übungen/Übung 1/C++/Neuer Ordner/Build" --check-stamp-file "D:/Studium Inf WS20_21/Prog3/Übungen/Übung 1/C++/Neuer Ordner/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

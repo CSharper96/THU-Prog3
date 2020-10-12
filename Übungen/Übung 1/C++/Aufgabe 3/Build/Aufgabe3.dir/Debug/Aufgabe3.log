@@ -1,0 +1,11 @@
+﻿  Building Custom Rule D:/Studium Inf WS20_21/Prog3/�bungen/�bung 1/C++/Aufgabe 3/CMakeLists.txt
+  Aufgabe3.cpp
+D:\Studium Inf WS20_21\Prog3\Übungen\Übung 1\C++\Aufgabe 3\Aufgabe3.cpp(13,5): error C3861: "analyze": Bezeichner wurde nicht gefunden.
+D:\Studium Inf WS20_21\Prog3\Übungen\Übung 1\C++\Aufgabe 3\Aufgabe3.cpp(14,5): error C3861: "analyze": Bezeichner wurde nicht gefunden.
+D:\Studium Inf WS20_21\Prog3\Übungen\Übung 1\C++\Aufgabe 3\Aufgabe3.cpp(15,5): error C3861: "analyze": Bezeichner wurde nicht gefunden.
+D:\Studium Inf WS20_21\Prog3\Übungen\Übung 1\C++\Aufgabe 3\Aufgabe3.cpp(16,5): error C3861: "analyze": Bezeichner wurde nicht gefunden.
+D:\Studium Inf WS20_21\Prog3\Übungen\Übung 1\C++\Aufgabe 3\Aufgabe3.cpp(17,5): error C3861: "analyze": Bezeichner wurde nicht gefunden.
+D:\Studium Inf WS20_21\Prog3\Übungen\Übung 1\C++\Aufgabe 3\Aufgabe3.cpp(18,5): error C3861: "analyze": Bezeichner wurde nicht gefunden.
+D:\Studium Inf WS20_21\Prog3\Übungen\Übung 1\C++\Aufgabe 3\Aufgabe3.cpp(19,5): error C3861: "analyze": Bezeichner wurde nicht gefunden.
+  analyze.cpp
+  Code wird generiert...

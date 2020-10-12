@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Studium Inf WS20_21\Prog3\Übungen\Übung 1\C++\Neuer Ordner\Build\CMakeFiles\881c0d80ac3db0ce75a10e4105d24e8c\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8303EE51-CB02-367D-A637-5555D07C499B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
