@@ -33,3 +33,6 @@
 
 # Folders
 Build/
+build/
+.vs/
+out/
