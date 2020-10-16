@@ -1,0 +1,83 @@
+Aufgabe 2.1
+
+One-definition-rule verletzt. Es kann nur eine Methode "log" heißen. Folie: 9
+
+Aufgabe 2.2
+
+int main() 
+{  
+    float a=1.1;      // Warnung: [ ]-ja   [x]-nein  
+    double b=3.2;// Warnung: [ ]-ja   [x]-nein  
+    a=b;// Warnung: [ ]-ja   [x]-nein  
+    b=a;// Warnung: [ ]-ja   [x]-nein  
+    a={b};// Warnung: [x]-ja   [ ]-nein  
+    b={a};// Warnung: [ ]-ja   [x]-nein
+}
+Folie 20
+
+2.3
+
+Was ist ein dangling pointer?
+Ein Pointer der auf leeren Speicher zeigt.
+Kann vorkommen wenn man den Speicher eines Objektes frühzeitig freigibt.
+Folie 33
+
+2.4
+
+#include<iostream>
+void f(int *p) 
+{ 
+    (*p)++; 
+}
+void f(int &p) 
+{ 
+    p-=10; 
+}
+int main() 
+{  
+    int x=0; 
+    f(&x); +1 
+    f(x); -9
+    f(&x);  -8
+    std::cout << x << "\n";
+}
+
+Ausgabe: -8     Folien: 26 und 27
+Bei f(int *p) erwartet die Methode eine Adresse
+Bei f(int &p) erwartet die Methode einen Wert
+f(&x) übergibt Adresse
+f(x) übergibt Wert
+
+Aufgabe 2.5
+
+#include<iostream>
+int main() 
+{  
+    int a;  
+    std::cin >> a;          // read an int  10
+    const int b=a;          // Fehler: [ ]-ja   [x]-nein  
+    a++;                    // Fehler: [ ]-ja   [x]-nein  
+    b++;                    // Fehler: [x]-ja   [ ]-nein  
+    constexpr int c = a;    // Fehler: [x]-ja   [ ]-nein
+}
+Folie 23
+
+Aufgabe 2.6
+
+#include<iostream>
+int main() 
+{  
+    int x=0;                    //Wert änderbar
+    const int *p1 = &x;         //Adresse änderbar / Wert konstant
+    int* const p2 = &x;         //Wert änderbar / Adresse konstant
+    const int* const p3 = &x;   //Adresse und Wert konstant
+    *p1 = 1;                // Fehler [x]-ja [ ]-nein  
+    *p2 = 2;                // Fehler [ ]-ja [x]-nein  
+    *p3 = 3;                // Fehler [x]-ja [ ]-nein  
+    p1 = nullptr;           // Fehler [ ]-ja [x]-nein  
+    p2 = nullptr;           // Fehler [x]-ja [ ]-nein  
+    p3 = nullptr;           // Fehler [x]-ja [ ]-nein
+}
+Folie 29
+*p = 1 => Wert wird verändert
+p = 1 => Adresse wird verändert
